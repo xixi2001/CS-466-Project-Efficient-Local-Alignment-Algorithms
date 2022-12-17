@@ -9,6 +9,7 @@ def print_reversed_list(s):
     for i in range(len(s)-1,0-1,-1):
         str += s[i]
     print(str)
+    return str
 
 def computeScore(u, v, delta):
     sum = 0

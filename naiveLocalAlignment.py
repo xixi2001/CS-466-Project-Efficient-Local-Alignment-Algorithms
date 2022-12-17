@@ -151,6 +151,6 @@ for i in range(len(keys)):
 # local_align("TAGATA", "GTAGGCTTAAGGTTA", delta)
 # local_align("TAGATA","GTAGGCTTAAGGTTA",delta)
 
-res = local_align("AACCTGAC", "CTACGTAC", delta)
+# res = local_align("AACCTGAC", "CTACGTAC", delta)
 # print(res[0])
 # print(res[1])

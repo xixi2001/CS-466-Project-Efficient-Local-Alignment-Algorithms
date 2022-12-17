@@ -62,5 +62,5 @@ keys.append('-')
 delta = {}
 for i in range(len(keys)):
     delta[keys[i]] = {k : v for (k,v) in zip(keys, [1 if keys[i] == keys[j]  else -1 for j in range(len(keys))])}
-linear_space_local_align("BIOLGIA", "BOILGAI", delta)
-linear_space_local_align("ATCGAAGT", "ACCTGCA", delta)
+# linear_space_local_align("BIOLGIA", "BOILGAI", delta)
+# linear_space_local_align("ATCGAAGT", "ACCTGCA", delta)
