@@ -6,8 +6,8 @@ def tracebackAll(v, w, dp, i, j, s, t):
   sum = 0
   if dp[i][j] == 0:
     print("------------------------")
-    print_reversed_list(s)
-    print_reversed_list(t)
+    reverse_s = print_reversed_list(s)
+    reverse_t = print_reversed_list(t)
     list.append([reverse_s, reverse_t])
     sum += 1
   a = v[i-1]
