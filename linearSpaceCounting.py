@@ -49,8 +49,6 @@ def linear_space_local_align(v, w, delta):
                 total_optiaml_alignment_count = 0
             if dp_cur[j] == max_score:
                 total_optiaml_alignment_count += cnt_cur[j]
-                if max_score == 2:
-                    print(i,j,": ", cnt_cur[j])
     # print("best score: ",max_score)
     # print("total optiaml alignment count: ",total_optiaml_alignment_count)
     return total_optiaml_alignment_count

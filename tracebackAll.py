@@ -5,7 +5,7 @@ list = []
 def tracebackAll(v, w, dp, i, j, s, t):
   sum = 0
   if dp[i][j] == 0:
-    print("------------------------")
+    # print("------------------------")
     reverse_s = print_reversed_list(s)
     reverse_t = print_reversed_list(t)
     list.append([reverse_s, reverse_t])
@@ -72,7 +72,7 @@ def local_align(v, w, delta):
       for j in range(len(w)+1):
         if dp[i][j] == score:
           total_optiaml_alignment_count += tracebackAll(v ,w, dp, i, j, [], [])
-    print("total optiaml alignment count: ",total_optiaml_alignment_count)
+    # print("total optiaml alignment count: ",total_optiaml_alignment_count)
     return None
 
 
