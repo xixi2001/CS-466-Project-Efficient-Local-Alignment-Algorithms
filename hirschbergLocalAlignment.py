@@ -131,7 +131,7 @@ def linear_space_local_align(v, w, delta):
                 max_score = dp_cur[j]
                 max_i = i
                 max_j = j
-    print("best score: ",max_score)
+    # print("best score: ",max_score)
     return max_i,max_j
 
 def linear_space_local_align_solution(v, w, delta):
@@ -151,8 +151,8 @@ delta = {}
 for i in range(len(keys)):
     delta[keys[i]] = {k : v for (k,v) in zip(keys, [1 if keys[i] == keys[j]  else -1 for j in range(len(keys))])}
 
-res = linear_space_local_align_solution("AAZZ", "AABZZ", delta)
-print("score: ", computeScore(res[0],res[1],delta))
-print(res[0] + "\n" + res[1])
+# res = linear_space_local_align_solution("AAZZ", "AABZZ", delta)
+# print("score: ", computeScore(res[0],res[1],delta))
+# print(res[0] + "\n" + res[1])
 
 

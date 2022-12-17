@@ -28,18 +28,18 @@
             </form>
         </div>
 
-        {% if local_alignment %}
-        <div class="container" style="margin-top: 50px">
-            <h4>Optimal Local Alignment:</h3>
-            <p>{{local_alignment[0]}}</p>
-            <p>{{local_alignment[1]}}</p>
-        </div>
-        {% endif %}
-
         {% if best_score %}
         <div class="container" style="margin-top: 50px">
             <h4>Optimal Score:</h4>
             <p>{{best_score}}</p>
+        </div>
+        {% endif %}
+
+        {% if local_alignment %}
+        <div class="container" style="margin-top: 50px">
+            <h4>One Optimal Local Alignment:</h3>
+            <p>{{local_alignment[0]}}</p>
+            <p>{{local_alignment[1]}}</p>
         </div>
         {% endif %}
 
@@ -52,7 +52,7 @@
 
         {% if all_alignments %}
         <div class="container" style="margin-top: 50px">
-            <h4>All Local Alignment:</h3>
+            <h4>Printing All Local Alignments:</h3>
             {% for alignment in all_alignments %}
 				<li>
 					{{alignment}}
