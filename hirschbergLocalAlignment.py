@@ -102,8 +102,6 @@ def Hirschberg(v, w, delta):
     return resl[0]+resr[0], resl[1]+resr[1]
 
 def linear_space_local_align(v, w, delta):
-    if len(v) < len(w):
-        v, w = w, v
     
     dp_pre = [0 for i in range(len(w)+1)]
     dp_cur = [0 for i in range(len(w)+1)]
@@ -153,7 +151,7 @@ delta = {}
 for i in range(len(keys)):
     delta[keys[i]] = {k : v for (k,v) in zip(keys, [1 if keys[i] == keys[j]  else -1 for j in range(len(keys))])}
 
-res = linear_space_local_align_solution("AACCTGAC", "CTACGTAC", delta)
+res = linear_space_local_align_solution("AAZZ", "AABZZ", delta)
 print("score: ", computeScore(res[0],res[1],delta))
 print(res[0] + "\n" + res[1])
 
